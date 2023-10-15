@@ -9,7 +9,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         tools:ignore="MissingConstraints" >
         <!--로고, 내 정보 이미지-->
 
@@ -17,20 +17,29 @@
             android:id ="@+id/user"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_margin="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
             android:padding="5dp"
             android:src="@drawable/userImg"
 
             />
+
         <ImageView
-            android:src="@drawable/logo"
             android:id="@+id/mainlogo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo"
 
             />
     </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
 
     <LinearLayout
 
@@ -38,10 +47,11 @@
         android:layout_height="450dp"
         android:text="text2">
         <!--캘린더-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text = "캘린더 "/>
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
 
     </LinearLayout>
 

@@ -20,9 +20,9 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
             android:padding="5dp"
-            android:src="@drawable/useimg"
+            android:src="@drawable/useimg" />
+                    <!-- 테스트중-->
 
-            />
 
         <ImageView
             android:id="@+id/mainlogo"

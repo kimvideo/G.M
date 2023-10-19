@@ -21,7 +21,7 @@
             android:layout_marginTop="5dp"
             android:padding="5dp"
             android:src="@drawable/useimg" />
-                    <!-- 테스트중-->
+                    <!-- 테스트중 이제 될려나?-->
 
 
         <ImageView

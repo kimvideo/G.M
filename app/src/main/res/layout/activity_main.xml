@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -21,25 +22,70 @@
             android:layout_marginTop="5dp"
             android:padding="5dp"
             android:src="@drawable/useimg" />
-                    <!-- 테스트중 이제 될려나?-->
+
 
 
         <ImageView
             android:id="@+id/mainlogo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="20dp"
             android:src="@drawable/logo"
 
             />
     </FrameLayout>
+    <!--
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp">
         <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:src="@drawable/happy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </HorizontalScrollView>
     </LinearLayout>
+-->
+    <!--
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerHorizon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/happy"/>
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </FrameLayout>  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imogerecyclerHorizon"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/story_layout">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
 
     <LinearLayout
 
@@ -62,6 +108,7 @@
         android:gravity="center">
         <!-- 측정 버튼-->
         <Button
+            android:id="@+id/measure_Button"
             android:gravity="center"
             android:layout_width="300dp"
             android:layout_height="70dp"
@@ -69,12 +116,12 @@
             android:textSize="20dp"
             />
         <Button
+            android:id="@+id/playlist_Button"
             android:gravity="center"
             android:layout_width="300dp"
             android:layout_height="70dp"
             android:text="이전 플레이 리스트 재생"
             android:textSize="20dp"
-
             />
 
 

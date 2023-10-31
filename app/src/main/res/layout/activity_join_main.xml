@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Join_Activity"
+    tools:context=".Join_MainActivity"
     android:orientation="vertical">
 
     <LinearLayout

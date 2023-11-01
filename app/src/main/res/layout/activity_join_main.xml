@@ -8,20 +8,22 @@
     tools:context=".Join_MainActivity"
     android:orientation="vertical">
 
+<!--  상단 회원가입 글자  -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:textSize="30dp"
             android:text="회원가입"
-            android:layout_marginLeft="150dp"/>
+            android:layout_gravity="center"/>
 
     </LinearLayout>
-
+<!--    이메일 아이디-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,6 +47,7 @@
 
     </LinearLayout>
 
+<!--  비밀번호  -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -68,7 +71,7 @@
 
     </LinearLayout>
 
-
+<!-- 비밀번호 확인 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -92,6 +95,7 @@
 
     </LinearLayout>
 
+<!--  확인 버튼  -->
     <Button
         android:id="@+id/joinCheck"
         android:layout_width="match_parent"
@@ -102,6 +106,7 @@
         android:textSize="20dp"
         android:text="확인"/>
 
+<!--  취소 버튼  -->
     <Button
         android:id="@+id/joinCancel"
         android:layout_width="match_parent"

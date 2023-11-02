@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Playlist_MainActivity">
+    tools:context=".Playlist_Activity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -34,13 +34,11 @@
             />
     </FrameLayout>
 
-<!--  플레이리스트 정보  -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-<!--    플레이리스트 제목    -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -48,7 +46,6 @@
             android:textSize="35dp"
             android:text="데일리 리스트"/>
 
-<!--    곡 개수와 시간    -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="30dp"
@@ -57,7 +54,6 @@
             android:textColor="#808080"
             android:text="20곡 1시간 30분"/>
 
-<!--    해시태그    -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
@@ -67,7 +63,6 @@
 
     </LinearLayout>
 
-<!--  구분 선  -->
     <View
         android:layout_width="390dp"
         android:layout_height="2dp"
@@ -76,7 +71,6 @@
         android:layout_marginTop="8dp"
         android:background="#808080"/>
 
-<!--  리스트  -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -87,7 +81,6 @@
 
     </LinearLayout>
 
-<!--  구분 선  -->
     <View
         android:layout_width="390dp"
         android:layout_height="2dp"
@@ -100,8 +93,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <!--    현재 재생중인 음악 이미지   -->
-        <!--      현재 재생중인 음악의 정보로 변경되도록 구현 필요      -->
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -113,8 +104,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!--    현재 재생중인 음악의 제목   -->
-            <!--      현재 재생중인 음악의 정보로 변경되도록 구현 필요      -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
@@ -123,23 +112,20 @@
                 android:textSize="20dp"
                 android:text="Title"/>
 
-            <!--    현재 재생중인 음악의 가수이름   -->
-            <!--      현재 재생중인 음악의 정보로 변경되도록 구현 필요      -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
                 android:layout_marginLeft="20dp"
                 android:textSize="15dp"
                 android:text="Singer"/>
+
         </LinearLayout>
 
-<!--음악 재생 / 건너뛰기 / 이전 음악 버튼-->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="120dp">
 
-<!--이전 음악 버튼-->
             <ImageButton
                 android:layout_width="60dp"
                 android:layout_height="60dp"
@@ -150,8 +136,6 @@
                 android:scaleType="fitCenter"
                 android:background="@android:color/transparent"/>
 
-<!--재생 버튼-->
-<!-- 버튼을 눌렀을 때 정지 버튼과 이미지가 바뀌는것 구현해야함 -->
             <ImageButton
                 android:layout_width="60dp"
                 android:layout_height="60dp"
@@ -162,7 +146,6 @@
                 android:scaleType="fitCenter"
                 android:background="@android:color/transparent"/>
 
-<!-- 음악 건너뛰기 버튼 -->
             <ImageButton
                 android:layout_width="60dp"
                 android:layout_height="60dp"
